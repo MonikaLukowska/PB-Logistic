@@ -1,0 +1,14 @@
+.contact{
+    position:relative;
+    color:$mainGray;
+
+    &__contacts{
+        >ul>li>a{
+            color:$mainGray;
+        }
+    }
+
+    &__info{
+        margin:40px 0;
+    }
+}

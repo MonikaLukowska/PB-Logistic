@@ -1,0 +1,26 @@
+.pagination{
+    color:#fff;
+    position:relative;
+    color:#fff;
+
+  
+
+   &::before{
+       @include pseudo;
+       width:100px;
+       height:5px;
+       top:50%;
+       left:-120px; 
+       transform:translateY(-50%);
+       background-color:$mainOrange;
+
+   } 
+}
+
+.services span::before{
+background-color:$mainBlue;
+}
+
+.contact span{
+    color:$mainGray;
+}

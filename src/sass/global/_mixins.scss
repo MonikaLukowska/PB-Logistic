@@ -8,5 +8,12 @@
     display:flex;
     flex-direction:$direction;
     justify-content:$justify;
-    align-items:$align
+    align-items:$align;
 }
+
+@mixin pseudo ($display:block, $content: "", $pos: absolute){
+    display:$display;
+    content: $content;
+    position:$pos;
+}
+

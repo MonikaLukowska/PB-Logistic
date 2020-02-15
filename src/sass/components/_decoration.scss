@@ -1,0 +1,62 @@
+.decoration{
+    width: 12rem;
+    height:8px;
+    background-color: $mainOrange;
+    z-index:1;
+
+    &--right{
+        position:absolute;
+        top:80%;
+        right:8%;
+
+         &--top{
+            top:20%;
+        }
+
+        &::before{
+            @include pseudo;
+            width: 12rem;
+            height:8px;
+            top: -350%;
+            left:20%;
+            background-color:$mainGray;
+        }
+        &::after{
+            @include pseudo;
+            width: 12rem;
+            height:8px;
+            top: 350%;
+            left:20%;
+            background-color:$mainGray;
+        }
+
+       
+
+        
+    }
+
+    &--left{
+        position:absolute;
+        top:40%;
+        left:8%;
+
+        &::before{
+            @include pseudo;
+            width: 12rem;
+            height:8px;
+            top: -350%;
+            left:20%;
+            background-color:$mainGray;
+        }
+        &::after{
+            @include pseudo;
+            width: 12rem;
+            height:8px;
+            top: 350%;
+            left:20%;
+            background-color:$mainGray;
+        }
+    }
+    
+    
+}

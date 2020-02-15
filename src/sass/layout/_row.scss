@@ -1,0 +1,7 @@
+.row{
+    @include flex(row, space-between, center)
+
+    &:nth-child(1){
+        @include flex(row, space-around, stretch)
+    }
+}

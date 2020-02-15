@@ -1,14 +1,24 @@
-const path = require("path")
+const path = require("path");
+const webpack = require('webpack');
 const ExtractTextWebpackPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
-    entry: "./src/js/index.js",
-    output: {
-        publicPath: "/dist/",
-        filename:"bundle.js",
-        path: path.resolve(__dirname, "dist/")
+module.exports = function(env) {
+    
+ const prod = env !== undefined && env.production === true;
+ const dev = env !== undefined && env.development === true;
+
+    return {
+        entry: "./src/js/index.js",
+       
+       output: {
+        publicPath: dev ? "/dist/" : "",
+        //filename:"bundle.js",
+        path: path.resolve(__dirname, "dist/"),
+        filename: prod ? "[name].[chunkhash].js" : "[name].js"
     },
+
+    devtool: "cheap-module-eval-source-map",
 
     module:{
         rules:[
@@ -74,6 +84,8 @@ module.exports = {
         new ExtractTextWebpackPlugin("style.css"),
         new HtmlWebpackPlugin({
             template:"./src/index.html"
-        })
+        }),
+        
     ]
+    }
 }

@@ -1,6 +1,6 @@
 .hero{
     background-color: $mainBlue;
-    height:80vh;
+    height:85vh;
     width:100vw;
     @include flex(column, center, center);
     color:#fff;
@@ -13,5 +13,10 @@
          >span{
         color:$mainOrange;
          }
+    }
+
+    &__subtitle{
+        font-size:2rem;
+        text-align:center;
     }
 }

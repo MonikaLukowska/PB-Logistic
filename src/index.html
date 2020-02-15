@@ -13,36 +13,48 @@
 
 <body>
     <header class="header">
+    
         <div class="header__logo">
             <img src="/images/logo_PB.png" alt="logo PB logistic">
         </div>
         <nav class="header__nav">
             <ol>
-                <li><a href="#"></a>O nas</li>
-                <li><a href="#"></a>Nasze wartości</li>
-                <li><a href="#"></a>Nasze usługi</li>
-                <li><a href="#"></a>Kontakt</li>
+                <li><a href="#about">O nas</a></li>
+                <li><a href="#">Nasze wartości</a></li>
+                <li><a href="#">Nasze usługi</a></li>
+                <li><a href="#">Kontakt</a></li>
             </ol>
         </nav>
+       
     </header>
     <section class="hero">
+    <div class="content-wrapper contact-wrapper-wide">
         <div class="decoration decoration--left"></div>
         <h1 class="hero__title"><span>PB</span> Logistic</h1>
         <h4 class="hero__subtitle">Twój zaufany partner w biznesie</h4>
         <div class="decoration decoration--right"></div>
+      </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
+      <div class="content-wrapper">
         <span class="pagination">01.</span>
-        <h2 class="headline">O nas</h2>
-        <p class="about__content"></p>
-        <div class="about__img">
-            <img src="/images/uslugi_pb_logistic.png" alt="transport drogowy, lotniczy, morski, magazyny">
+        <div class="row">
+           <div class="about__content">
+            <h2 class="headline">O nas</h2> 
+            <p class="about__desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+            </div>
+            <div class="about__img">
+                <img src="/images/uslugi_pb_logistic.png" alt="transport drogowy, lotniczy, morski, magazyny">
+            </div>
         </div>
+      </div>
     </section>
     <section class="features">
+    <div class="decoration decoration--right decoration--right--top"></div>
+      <div class="content-wrapper">
         <span class="pagination">02.</span>
         <h2 class="headline">Jakie są nasze wartości</h2>
-        <div class="decoration decoration--right"></div>
+        
         <div class="features__container">
             <div class="row">
                 <div class="feature">
@@ -65,12 +77,15 @@
                 </div>
             </div>
         </div>
-        <div class="decoration decoration--right"></div>
+        
+     </div>
     </section>
     <section class="services">
+    <div class="content-wrapper">
         <span class="pagination">03.</span>
-        <h2 class="headline">Czym się zajmujemy w PB Logistic</h2>
-        <div class="services__content">
+          <div class="row">
+          <div class="services__content">
+          <h2 class="headline">Czym się zajmujemy w PB Logistic</h2>
             <ul>
                 <li>optymalizacja procesów ligistycznych </li>
                 <li>zarządzanie realizacją procesu zamówniea (w tym zaopatrzenie</li>
@@ -82,11 +97,15 @@
         <div class="services__img">
             <img src="/images/zespol_pb_logistic.png" alt="zespol PB logistic opracowuje strategie logistyczną">
         </div>
+        </div>
+        </div>
     </section>
     <section class="contact">
+      <div class="decoration decoration--right decoration--right--top"></div>
+     <div class="content-wrapper contact-wrapper-wide">
         <span class="pagination">04.</span>
-        <h2 class="headline">Skontaktuj się z nami</h2>
-        <div class="decoration decoration--right"></div>
+        <h2 class="headline headline--gray">Skontaktuj się z nami</h2>
+
         <div class="contact__info">
             <div class="row">
                 <div class="contact__company">
@@ -106,9 +125,11 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
+    <footer></footer>
 
 </body>
-<script src="dist/bundle.js"></script>
+
 
 </html>
