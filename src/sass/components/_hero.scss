@@ -1,0 +1,17 @@
+.hero{
+    background-color: $mainBlue;
+    height:80vh;
+    width:100vw;
+    @include flex(column, center, center);
+    color:#fff;
+
+   
+    &__title{
+        font-weight:bold;
+        font-size:10rem;
+         
+         >span{
+        color:$mainOrange;
+         }
+    }
+}
