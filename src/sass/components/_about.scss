@@ -1,23 +1,46 @@
-.about{
-    background-color:$mainBlue;
-    color:#fff;
+.about {
+    min-height: 80vh;
+    background-color: $mainBlue;
+    color: #fff;
 
-    &__content{
-        flex: 1 0 50%;
+    &__content {
+
         align-self: flex-start;
-    }
 
-    &__desc{
-        margin: 0 2em;
-    }
-
-    &__img{
-       flex: 1 0 40%;
-
-        >img{
-            max-width:100%;
+        @include mq('medium-wide') {
+            flex: 1 0 45%;
         }
     }
 
-   
+    &__desc {
+        margin: 0 0.5em 2em 0.5em;
+        line-height: 2;
+        font-size: 1.1rem;
+
+        @include mq('medium-wide') {
+            margin: 0 2em;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__img {
+        padding: 1em;
+
+        @include mq('medium-wide') {
+            width: 70%;
+
+            >img {
+                width: 100%;
+            }
+        }
+
+
+    }
+
+    @include mq('medium-wide') {
+        padding-top: 100px;
+        font-size: 1.2rem;
+    }
+
+
 }

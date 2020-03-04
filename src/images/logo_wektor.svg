@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="526" height="637" viewBox="0 0 526 637">
+  <g id="Inteligentny_obiekt_wektorowy" data-name="Inteligentny obiekt wektorowy" transform="translate(-130.063 -267.426)">
+    <g id="Group_61" data-name="Group 61" transform="translate(361.302 267.426)">
+      <path id="Path_64" data-name="Path 64" d="M163.223,231.426V339.348c67.315,0,103.862,34.494,103.862,77.13,0,42.355-36.54,77.123-103.862,77.123V601.508c161.206,0,234.485-67.878,234.485-185.031C397.708,298.355,322.962,231.426,163.223,231.426Z" transform="translate(-163.223 -231.426)" fill="#0069b4"/>
+    </g>
+    <g id="Group_62" data-name="Group 62" transform="translate(130.063 368.71)">
+      <rect id="Rectangle_17" data-name="Rectangle 17" width="119.134" height="428.149" fill="#5a5a5a"/>
+    </g>
+    <g id="Group_63" data-name="Group 63" transform="translate(361.302 558.434)">
+      <path id="Path_65" data-name="Path 65" d="M383.717,273.84C361.86,308.8,325.456,338.211,267.27,353.9c40.1,11.568,61.563,40.456,61.563,74.383,0,43.837-36.094,79.807-102.681,79.807H163.223V619.832h62.929c159.371,0,231.832-70.3,231.832-191.563C457.984,358.489,433.775,306.051,383.717,273.84Z" transform="translate(-163.223 -273.84)" fill="#e65a0a"/>
+    </g>
+  </g>
+</svg>

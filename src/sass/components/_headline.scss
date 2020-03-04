@@ -1,6 +1,21 @@
 .headline{
-    font-size: 2.5rem;
+    margin-bottom:20px;
+    font-size: 1.9rem;
     color:#fff;
+    text-align:center;
+
+       @include mq ("small") {
+         font-size: 2.1rem;
+        }
+        @include mq ("medium") {
+        
+         font-size: 2.3rem;
+        }
+        @include mq ("medium-wide") {
+            margin-left:50px;
+         text-align:left;
+         font-size: 2.5rem;
+        }
 
     &--gray{
         color:$mainGray;

@@ -1,3 +1,9 @@
 $mainBlue: #0268B4;
 $mainOrange: #F56400;
 $mainGray: #5A5A5A;
+
+$breakpoints: ("small": 530px,
+    "medium": 768px,
+    "medium-wide": 1024px,
+    "large": 1248px,
+    "large-wide": 1440px);

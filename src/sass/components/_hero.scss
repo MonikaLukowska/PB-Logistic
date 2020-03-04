@@ -1,22 +1,81 @@
-.hero{
+.hero {
+    position: relative;
+    padding: 0 15px;
+    margin-top: 15vh;
     background-color: $mainBlue;
-    height:85vh;
-    width:100vw;
-    @include flex(column, center, center);
-    color:#fff;
+    height: 85vh;
+    max-width: 100vw;
+    /*@include flex(column, center, center);*/
+    color: #fff;
+    transition: all 1s linear;
 
-   
-    &__title{
-        font-weight:bold;
-        font-size:10rem;
-         
-         >span{
-        color:$mainOrange;
-         }
+
+    &__title {
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 3rem;
+        text-align: center;
+        line-height: 1;
+        transition: all .7s linear;
+
+        @include mq ("small") {
+            font-size: 4.5rem;
+        }
+
+        @include mq ("medium") {
+            line-height: 1;
+            font-size: 6rem;
+        }
+
+        @include mq ("medium-wide") {
+            font-size: 10rem;
+        }
+
+        >span {
+
+            color: $mainOrange;
+        }
+
+
     }
 
-    &__subtitle{
-        font-size:2rem;
-        text-align:center;
+    &__subtitle {
+        font-size: 1.3rem;
+        text-align: center;
+        transition: all .5s linear;
+
+        @include mq ("small") {
+            font-size: 1.64rem;
+        }
+
+        @include mq ("medium") {
+            font-size: 1.8rem;
+        }
+
+        @include mq ("medium-wide") {
+            font-size: 2rem;
+        }
+    }
+
+    >svg {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        >#rect {
+            margin: 0 auto;
+        }
+
+        @include mq('medium-wide') {}
+    }
+
+    &__content {
+        @include center;
+        transition: all .7s ease-out;
+    }
+
+    #rect {
+        margin: 0 auto;
     }
 }

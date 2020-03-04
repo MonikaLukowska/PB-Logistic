@@ -1,62 +1,93 @@
-.decoration{
+.decoration {
+    display: none;
     width: 12rem;
-    height:8px;
+    height: 10px;
     background-color: $mainOrange;
-    z-index:1;
+    z-index: 1;
+    transition: 0.6s ease-out;
 
-    &--right{
-        position:absolute;
-        top:80%;
-        right:8%;
 
-         &--top{
-            top:20%;
+
+
+    &--right {
+        position: absolute;
+        top: 80%;
+        right: 8%;
+
+
+        &--top {
+            top: 20%;
+
         }
 
-        &::before{
-            @include pseudo;
+        &--t {
+            display: block;
+            position: absolute;
             width: 12rem;
-            height:8px;
+            height: 8px;
             top: -350%;
-            left:20%;
-            background-color:$mainGray;
+            left: 20%;
+            background-color: $mainGray;
+            transition: all 0.8s linear;
         }
-        &::after{
-            @include pseudo;
+
+
+        &--b {
+            display: block;
+            position: absolute;
             width: 12rem;
-            height:8px;
+            height: 8px;
             top: 350%;
-            left:20%;
-            background-color:$mainGray;
+            left: 20%;
+            background-color: #5596B8;
+            transition: all 0.8s linear;
         }
 
-       
 
-        
+
+
     }
 
-    &--left{
-        position:absolute;
-        top:40%;
-        left:8%;
+    &--left {
+        position: absolute;
+        top: 20%;
+        left: 5%;
 
-        &::before{
-            @include pseudo;
+        &--t {
+            display: block;
+            position: absolute;
             width: 12rem;
-            height:8px;
+            height: 10px;
             top: -350%;
-            left:20%;
-            background-color:$mainGray;
+            left: 20%;
+            background-color: #5596B8;
+            transition: all 0.8s linear;
         }
-        &::after{
-            @include pseudo;
+
+        &--b {
+            display: block;
+            position: absolute;
             width: 12rem;
-            height:8px;
+            height: 10px;
             top: 350%;
-            left:20%;
-            background-color:$mainGray;
+            left: 20%;
+            background-color: $mainGray;
+            transition: all 0.8s linear;
         }
     }
-    
-    
+
+    @include mq('medium-wide') {
+        display: block;
+    }
+
+
+}
+
+.decoration__container {
+    width: 200px;
+    height: 200px;
+}
+
+.decoration__container:hover .decoration {
+    transform: rotate(90deg);
 }

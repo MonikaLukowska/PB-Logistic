@@ -2,4 +2,7 @@ footer{
     height:50px;
     width:100vw;
     background-color:$mainGray;
+    color:#fff;
+    @include flex(row, center, center);
+    font-weight:300;
 }

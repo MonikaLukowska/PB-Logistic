@@ -1,7 +1,25 @@
-.row{
-    @include flex(row, space-between, center)
+.row {
+    max-width: 75rem;
+    margin: 0 auto;
+    @include flex(column, center, center);
 
-    &:nth-child(1){
-        @include flex(row, space-around, stretch)
+
+
+    @include mq('medium-wide') {
+        @include flex(row, space-around, center);
+
+        &:nth-child(1) {
+            @include flex(row, space-between, stretch);
+            max-width: 70rem;
+        }
+
+
+
     }
+
+    @include landscape {
+        @include flex(column, center, center);
+    }
+
+
 }

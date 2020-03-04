@@ -1,20 +1,30 @@
 .pagination{
-    color:#fff;
+    display:block;
     position:relative;
     color:#fff;
+    left:50%;
+    transform:translateY(-50%);
+    font-size:0.8rem;
+    
 
-  
+  @include mq('medium-wide'){
+      left:80px;
+      
 
-   &::before{
+
+        &::before{
+       display:none;
        @include pseudo;
        width:100px;
        height:5px;
        top:50%;
        left:-120px; 
        transform:translateY(-50%);
-       background-color:$mainOrange;
+       background-color:$mainOrange;  
+      }  
+       }
 
-   } 
+   
 }
 
 .services span::before{

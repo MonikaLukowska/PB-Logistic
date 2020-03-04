@@ -1,35 +1,42 @@
-.features{
-    background-color:rgba(2,104,180,0.5);
-    position:relative;
-  
+.features {
+    min-height: 80vh;
+    background-color: rgba(2, 104, 180, 0.5);
+    position: relative;
 
-    &__container{
-        margin-top:50px;
-        width:90%;
+
+    &__container {
+        margin-top: 50px;
+        width: 95%;
         @include marginAuto;
     }
 
-    .feature{
-        
-        @include flex(column, flex-start, center)
-        flex-basis:30%;
-       
-        
+    .feature {
 
-        &__img{
-            padding:20px;
-           
+        @include flex(column, flex-start, center);
+        flex-basis: 30%;
+        margin-bottom: 20px;
+
+
+
+        &__img {
+            padding: 30px;
+
         }
 
-        &__desc{
-            font-size:1.5rem;
-            text-align:center;
+        &__desc {
+            font-size: 1.1rem;
+            text-align: center;
+            color: #fff;
+
+            @include mq('medium') {
+                font-size: 1.5rem;
+            }
         }
 
 
     }
 
-    
+
 
 
 }

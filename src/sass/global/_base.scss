@@ -1,13 +1,28 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
+    font-family: 'Font Awesome 5 Pro';
     font-family: 'Kanit', sans-serif;
     color: $mainGray;
-    scroll-behavior:smooth;
-    line-height:2;
-    
+    scroll-behavior: smooth;
+    max-width: 100vw;
+
+
+
+
+    @include mq('medium') {
+        line-height: 2;
+    }
+
+}
+
+img {
+    height: auto;
+    width: 100%;
+
+
 }

@@ -1,18 +1,39 @@
-.services{
-    background-color:$mainOrange;
-    color:#fff;
+.services {
+    min-height: 80vh;
+    background-color: $mainOrange;
+    color: #fff;
 
-    &__content{
-        flex: 1 0 50%;
+    &__content {
+        margin-left: 0;
+        flex: 1 0 100%;
         align-self: flex-start;
 
-        >ul{
-            margin:2em 0 0 3em;
+        >ul {
+            margin: 2em 0 2em 3em;
+            font-size: 1.1rem;
 
-            >li{
-                font-size:1.5rem;
+            @include mq('medium') {
+                font-size: 1.3rem;
+                flex: 1 0 50%;
+            }
+
+
+            @include mq('medium-wide') {
+                font-size: 1.5rem;
+
             }
         }
+
+        @include mq('medium') {
+            flex: 1 0 50%;
+        }
+
+
+    }
+
+    &__img {
+        flex: 1 1 50%;
+
 
     }
 }

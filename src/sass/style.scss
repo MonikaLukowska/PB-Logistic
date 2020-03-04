@@ -1,5 +1,8 @@
-@import 'global/_mixins.scss';
+@import "./node_modules/normalize-scss/sass/normalize.scss";
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import "./node_modules/aos/src/sass/aos.scss";
 @import 'global/_variables.scss';
+@import 'global/_mixins.scss';
 @import 'global/_base.scss';
 @import 'components/_header.scss';
 @import 'components/_hero.scss';

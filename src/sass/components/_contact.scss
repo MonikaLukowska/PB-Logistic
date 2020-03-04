@@ -1,14 +1,57 @@
-.contact{
-    position:relative;
-    color:$mainGray;
+.contact {
+    position: relative;
+    color: $mainGray;
 
-    &__contacts{
-        >ul>li>a{
-            color:$mainGray;
+    &__background {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30%;
+        opacity: 0.15;
+    }
+
+
+    &__contacts {
+        margin-top: 2em;
+
+        >ul {
+            list-style: none;
+
+            >li>a::before {
+                font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+
+
+            }
+        }
+
+        >ul>li>a {
+            color: $mainGray;
+
         }
     }
 
-    &__info{
-        margin:40px 0;
+
+    &__info {
+        margin: 40px 0;
     }
+
+    &__email::before {
+        content: "\f0e0";
+        font-weight: 600;
+        margin-right: 10px;
+
+    }
+
+    &__mobile::before {
+        content: "\f3cd";
+        font-weight: 900;
+        margin-right: 15px;
+    }
+
 }

@@ -1,19 +1,46 @@
-@mixin marginAuto{
-    margin:{
+@mixin marginAuto {
+    margin: {
         left: auto;
         right: auto;
     }
 }
-@mixin flex ($direction, $justify,$align){
-    display:flex;
-    flex-direction:$direction;
-    justify-content:$justify;
-    align-items:$align;
+
+@mixin flex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
 }
 
-@mixin pseudo ($display:block, $content: "", $pos: absolute){
-    display:$display;
+@mixin pseudo ($display:block, $content: "", $pos: absolute) {
+    display: $display;
     content: $content;
-    position:$pos;
+    position: $pos;
 }
 
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+
+        @if $type==max {
+            $width: $width - 1px;
+        }
+
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+@mixin landscape {
+    @media (max-height: 800px) and (orientation:landscape) {
+        @content;
+    }
+}

@@ -1,9 +1,19 @@
-.content-wrapper{
-    max-width: 80rem;
+.content-wrapper {
+
     @include marginAuto;
 
-    &--wide{
+    @include mq('large-wide') {
+        max-width: 80rem;
+    }
+
+    &--wide {
         max-width: 120rem;
+    }
+
+    &--header {
+        width: 100%;
+        max-width: 120rem;
+        @include flex(row, space-between, center);
     }
 
 }
