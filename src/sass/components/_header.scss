@@ -101,7 +101,7 @@
     >img {
       width: 60%;
 
-      @include mq('medium-wide') {
+      @include mq('large-wide') {
         width: 100%;
       }
     }
