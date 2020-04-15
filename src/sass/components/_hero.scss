@@ -72,7 +72,7 @@
         }
 
         @include mq('medium-wide') {
-            bottom: -10%;
+            bottom: -8%;
         }
 
         @include mq('large-wide') {
@@ -94,7 +94,7 @@
     }
 
     .rect:hover {
-        fill: #fff;
+        fill: transparent;
         pointer-events: all;
     }
 }

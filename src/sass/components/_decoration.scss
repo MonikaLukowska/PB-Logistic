@@ -1,93 +1,142 @@
 .decoration {
     display: none;
-    width: 12rem;
-    height: 10px;
-    background-color: $mainOrange;
     z-index: 1;
     transition: 0.6s ease-out;
 
 
+    &--right{
+        position:absolute;
+        height:5rem;
+        width:20rem;
+        top:70%;
+        right:5%;
+        transition: 0.6s ease-out;
 
-
-    &--right {
+        &--m {
         position: absolute;
-        top: 80%;
+        width: 12rem;
+        height: 10px;
+        background-color: $mainOrange;
+        top: 45%;
         right: 8%;
-
-
-        &--top {
-            top: 20%;
-
-        }
-
-        &--t {
-            display: block;
-            position: absolute;
-            width: 12rem;
-            height: 8px;
-            top: -350%;
-            left: 20%;
-            background-color: $mainGray;
-            transition: all 0.8s linear;
-        }
-
-
-        &--b {
-            display: block;
-            position: absolute;
-            width: 12rem;
-            height: 8px;
-            top: 350%;
-            left: 20%;
-            background-color: #5596B8;
-            transition: all 0.8s linear;
-        }
-
-
-
-
+        transition: 0.5s ease-out;
     }
-
-    &--left {
+    &--m.animated{
+        background-color:$mainBlue;
+    }
+      &--t {
+        display: block;
         position: absolute;
-        top: 20%;
-        left: 5%;
+        width: 12rem;
+        height: 8px;
+        top: 10%;
+        left: 20%;
+        background-color: $mainGray;
+        transition: all 0.5s linear;
+        }
+    &--t.animated{
+        left:70%;
+        background-color:$mainBlue;
+    }
 
-        &--t {
+    &--b {
+        display: block;
+        position: absolute;
+        width: 12rem;
+        height: 8px;
+        top: 90%;
+        left: 20%;
+        background-color: #5596B8;
+        transition: all 0.5s linear;
+        }
+    &--b.animated{
+        left:70%;
+        background-color:$mainBlue
+    }
+
+    }
+
+    
+    &--left{
+       
+        position:absolute;
+        height:5rem;
+        width:20rem;
+        top:20%;
+        left:5%;
+        
+
+        &--m {
+        position: absolute;
+        width: 12rem;
+        height: 10px;
+        background-color: $mainOrange;
+        top: 45%;
+        left: 5%;
+        transition: 0.5s ease-out;
+    }
+    &--m.animated{
+        background-color:$mainBlue;
+    }
+
+    &--t{
             display: block;
             position: absolute;
             width: 12rem;
             height: 10px;
-            top: -350%;
+            top: 10%;
             left: 20%;
             background-color: #5596B8;
-            transition: all 0.8s linear;
+            transition: all 0.5s linear;
         }
+    &--t.animated{
+        left:-50%;
+        background-color:$mainBlue;
+    }
 
-        &--b {
+    &--b {
             display: block;
             position: absolute;
             width: 12rem;
             height: 10px;
-            top: 350%;
+            top: 90%;
             left: 20%;
             background-color: $mainGray;
-            transition: all 0.8s linear;
+            transition: all 0.5s linear;
         }
+    &--b.animated{
+        left:-50%;
+        background-color:$mainBlue;
     }
+
+    }
+
+  &--right--top{
+      position:absolute;
+      top:15%;
+  }  
 
     @include mq('medium-wide') {
         display: block;
     }
 
-
 }
 
-.decoration__container {
-    width: 200px;
-    height: 200px;
+.decoration--left:hover .decoration--left--t {
+    transform: translate(-40%);   
 }
-
-.decoration__container:hover .decoration {
-    transform: rotate(90deg);
+.decoration--left:hover .decoration--left--m {
+    transform: translate(20%);   
+}
+.decoration--left:hover .decoration--left--b {
+    transform: translate(-40%);   
+}
+.decoration--right:hover .decoration--right--t {
+    transform: translate(40%);   
+}
+.decoration--right:hover .decoration--right--m {
+    transform: translate(-20%);   
+}
+.decoration--right:hover .decoration--right--b {
+    transform: translate(40%);   
 }
