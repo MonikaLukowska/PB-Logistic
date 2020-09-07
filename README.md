@@ -4,7 +4,7 @@ Main goal - practice SCSS and webpack configuration
 
 ## Screenshot
 
-(/src/images/page.png)
+(src/images/page.png)
 
 ## Tech stack:
 
